@@ -24,7 +24,7 @@
 | 사용 기술 | C++ / DirectX 11 / HLSL / ImGui |
 | 개발 기간 | 8주 |
 | 개발 인원 | 2명 |
-| 담당 범위 | 입력 예정 |
+| 담당 범위 | ImGui 기반 맵·이벤트 편집 도구, 전체 캐릭터의 공격·스킬, 동료 AI, OBB 충돌 판정, 일부 보스의 공격 패턴 구현 |
 
 ---
 
@@ -52,7 +52,7 @@ ImGui에서 타일 배치, 맵 크기 설정, 충돌 영역 편집과 저장·�
 
 적을 감지하면 대상에게 접근하고, 캐릭터의 공격 사거리 안에 들어오면 자동으로 공격과 콤보를 이어가도록 했습니다.
 
-| 동료의 자동 추적 | 전투 |
+| 동료의 자동 추적 | 동료의 자동 전투 |
 |:---:|:---:|
 | <img width="426" height="240" alt="Video Project 72" src="https://github.com/user-attachments/assets/eed6d8fe-e604-4385-9d04-30a130b4fefd" /> | <img width="426" height="240" alt="Video Project 73" src="https://github.com/user-attachments/assets/babf6698-9b6f-4a69-a5c5-b84082a250e8" /> |
 
