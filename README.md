@@ -41,52 +41,37 @@ ImGui에서 타일 배치, 맵 크기 설정, 충돌 영역 편집과 저장·�
 <details>
 <summary>관련 코드 위치</summary>
 
-```text
-Project/Client/MaptoolGUI.h
-Project/Client/MaptoolGUI.cpp
+**[`MaptoolGUI.h`](https://github.com/tjwjdah/Directx11_Portfolio_GuardianTales/blob/main/Project/Client/MaptoolGUI.h) · [`MaptoolGUI.cpp`](https://github.com/tjwjdah/Directx11_Portfolio_GuardianTales/blob/main/Project/Client/MaptoolGUI.cpp)**
+- [`MaptoolGUI::update`](https://github.com/tjwjdah/Directx11_Portfolio_GuardianTales/blob/main/Project/Client/MaptoolGUI.cpp#L48-L152)
+- [`MaptoolGUI::render`](https://github.com/tjwjdah/Directx11_Portfolio_GuardianTales/blob/main/Project/Client/MaptoolGUI.cpp#L154-L209)
 
-MaptoolGUI::update
-MaptoolGUI::render
+**[`CMapScript.h`](https://github.com/tjwjdah/Directx11_Portfolio_GuardianTales/blob/main/Project/Script/CMapScript.h) · [`CMapScript.cpp`](https://github.com/tjwjdah/Directx11_Portfolio_GuardianTales/blob/main/Project/Script/CMapScript.cpp)**
+- [`CMapScript::SetTileNum`](https://github.com/tjwjdah/Directx11_Portfolio_GuardianTales/blob/main/Project/Script/CMapScript.cpp#L109-L122)
+- [`CMapScript::SetTile`](https://github.com/tjwjdah/Directx11_Portfolio_GuardianTales/blob/main/Project/Script/CMapScript.cpp#L124-L135)
+- [`CMapScript::update`](https://github.com/tjwjdah/Directx11_Portfolio_GuardianTales/blob/main/Project/Script/CMapScript.cpp#L42-L59)
+- [`CMapScript::SaveToScene`](https://github.com/tjwjdah/Directx11_Portfolio_GuardianTales/blob/main/Project/Script/CMapScript.cpp#L76-L88)
+- [`CMapScript::LoadFromScene`](https://github.com/tjwjdah/Directx11_Portfolio_GuardianTales/blob/main/Project/Script/CMapScript.cpp#L90-L105)
 
-Project/Script/CMapScript.h
-Project/Script/CMapScript.cpp
+**[`std2d.fx`](https://github.com/tjwjdah/Directx11_Portfolio_GuardianTales/blob/main/Project/Engine/std2d.fx)**
+- [`VS_TILE`](https://github.com/tjwjdah/Directx11_Portfolio_GuardianTales/blob/main/Project/Engine/std2d.fx#L239-L254)
+- [`PS_TILE`](https://github.com/tjwjdah/Directx11_Portfolio_GuardianTales/blob/main/Project/Engine/std2d.fx#L257-L300)
 
-CMapScript::SetTileNum
-CMapScript::SetTile
-CMapScript::update
-CMapScript::SaveToScene
-CMapScript::LoadFromScene
+**[`BtnGUI.h`](https://github.com/tjwjdah/Directx11_Portfolio_GuardianTales/blob/main/Project/Client/BtnGUI.h) · [`BtnGUI.cpp`](https://github.com/tjwjdah/Directx11_Portfolio_GuardianTales/blob/main/Project/Client/BtnGUI.cpp)**
+- [`BtnGUI::render`](https://github.com/tjwjdah/Directx11_Portfolio_GuardianTales/blob/main/Project/Client/BtnGUI.cpp#L54-L198)
 
-Project/Engine/std2d.fx
+**[`ListGUI.h`](https://github.com/tjwjdah/Directx11_Portfolio_GuardianTales/blob/main/Project/Client/ListGUI.h) · [`ListGUI.cpp`](https://github.com/tjwjdah/Directx11_Portfolio_GuardianTales/blob/main/Project/Client/ListGUI.cpp)**
+- [`ListGUI::SetSelectCallBack`](https://github.com/tjwjdah/Directx11_Portfolio_GuardianTales/blob/main/Project/Client/ListGUI.h#L34-L38)
+- [`ListGUI::render`](https://github.com/tjwjdah/Directx11_Portfolio_GuardianTales/blob/main/Project/Client/ListGUI.cpp#L19-L78)
 
-VS_TILE
-PS_TILE
+**[`TreeCtrl.h`](https://github.com/tjwjdah/Directx11_Portfolio_GuardianTales/blob/main/Project/Client/TreeCtrl.h) · [`TreeCtrl.cpp`](https://github.com/tjwjdah/Directx11_Portfolio_GuardianTales/blob/main/Project/Client/TreeCtrl.cpp)**
+- [`TreeCtrl::SetDragDropCallBack`](https://github.com/tjwjdah/Directx11_Portfolio_GuardianTales/blob/main/Project/Client/TreeCtrl.h#L89-L93)
+- [`TreeCtrl::SetSelChangeCallBack`](https://github.com/tjwjdah/Directx11_Portfolio_GuardianTales/blob/main/Project/Client/TreeCtrl.h#L95-L99)
+- [`TreeCtrl::render`](https://github.com/tjwjdah/Directx11_Portfolio_GuardianTales/blob/main/Project/Client/TreeCtrl.cpp#L127-L203)
+- [`TreeCtrl::SetSelectedItem`](https://github.com/tjwjdah/Directx11_Portfolio_GuardianTales/blob/main/Project/Client/TreeCtrl.cpp#L205-L222)
 
-Project/Client/BtnGUI.h
-Project/Client/BtnGUI.cpp
-
-BtnGUI::render
-
-Project/Client/ListGUI.h
-Project/Client/ListGUI.cpp
-
-ListGUI::SetSelectCallBack
-ListGUI::render
-
-Project/Client/TreeCtrl.h
-Project/Client/TreeCtrl.cpp
-
-TreeCtrl::SetDragDropCallBack
-TreeCtrl::SetSelChangeCallBack
-TreeCtrl::render
-TreeCtrl::SetSelectedItem
-
-Project/Client/CImGUIMgr.h
-Project/Client/CImGUIMgr.cpp
-
-CImGUIMgr::AddCallBackEvent
-CImGUIMgr::progress
-```
+**[`CImGUIMgr.h`](https://github.com/tjwjdah/Directx11_Portfolio_GuardianTales/blob/main/Project/Client/CImGUIMgr.h) · [`CImGUIMgr.cpp`](https://github.com/tjwjdah/Directx11_Portfolio_GuardianTales/blob/main/Project/Client/CImGUIMgr.cpp)**
+- [`CImGUIMgr::AddCallBackEvent`](https://github.com/tjwjdah/Directx11_Portfolio_GuardianTales/blob/main/Project/Client/CImGUIMgr.h#L68-L72)
+- [`CImGUIMgr::progress`](https://github.com/tjwjdah/Directx11_Portfolio_GuardianTales/blob/main/Project/Client/CImGUIMgr.cpp#L69-L115)
 
 </details>
 
@@ -103,37 +88,26 @@ CImGUIMgr::progress
 <details>
 <summary>관련 코드 위치</summary>
 
-```text
-Project/Client/EventGUI.h
-Project/Client/EventGUI.cpp
+**[`EventGUI.h`](https://github.com/tjwjdah/Directx11_Portfolio_GuardianTales/blob/main/Project/Client/EventGUI.h) · [`EventGUI.cpp`](https://github.com/tjwjdah/Directx11_Portfolio_GuardianTales/blob/main/Project/Client/EventGUI.cpp)**
+- [`EventGUI::render`](https://github.com/tjwjdah/Directx11_Portfolio_GuardianTales/blob/main/Project/Client/EventGUI.cpp#L24-L99)
 
-EventGUI::render
+**[`CObjEventScript.h`](https://github.com/tjwjdah/Directx11_Portfolio_GuardianTales/blob/main/Project/Script/CObjEventScript.h) · [`CObjEventScript.cpp`](https://github.com/tjwjdah/Directx11_Portfolio_GuardianTales/blob/main/Project/Script/CObjEventScript.cpp)**
+- [`CObjEventScript::update`](https://github.com/tjwjdah/Directx11_Portfolio_GuardianTales/blob/main/Project/Script/CObjEventScript.cpp#L44-L79)
+- [`CObjEventScript::PushEvnetChild(CGameObject*)`](https://github.com/tjwjdah/Directx11_Portfolio_GuardianTales/blob/main/Project/Script/CObjEventScript.cpp#L81-L97)
+- [`CObjEventScript::PushEvnetChild(CObjEventScript*)`](https://github.com/tjwjdah/Directx11_Portfolio_GuardianTales/blob/main/Project/Script/CObjEventScript.cpp#L99-L110)
+- [`CObjEventScript::ReleaseEvent`](https://github.com/tjwjdah/Directx11_Portfolio_GuardianTales/blob/main/Project/Script/CObjEventScript.cpp#L111-L129)
 
-Project/Script/CObjEventScript.h
-Project/Script/CObjEventScript.cpp
+**[`CObjEventScriptMgr.h`](https://github.com/tjwjdah/Directx11_Portfolio_GuardianTales/blob/main/Project/Script/CObjEventScriptMgr.h) · [`CObjEventScriptMgr.cpp`](https://github.com/tjwjdah/Directx11_Portfolio_GuardianTales/blob/main/Project/Script/CObjEventScriptMgr.cpp)**
+- [`CObjEventScriptMgr::SaveToScene`](https://github.com/tjwjdah/Directx11_Portfolio_GuardianTales/blob/main/Project/Script/CObjEventScriptMgr.cpp#L32-L46)
+- [`CObjEventScriptMgr::LoadFromScene`](https://github.com/tjwjdah/Directx11_Portfolio_GuardianTales/blob/main/Project/Script/CObjEventScriptMgr.cpp#L48-L74)
 
-CObjEventScript::update
-CObjEventScript::PushEvnetChild
-CObjEventScript::ReleaseEvent
+**[`CRedButtonScript.h`](https://github.com/tjwjdah/Directx11_Portfolio_GuardianTales/blob/main/Project/Script/CRedButtonScript.h) · [`CRedButtonScript.cpp`](https://github.com/tjwjdah/Directx11_Portfolio_GuardianTales/blob/main/Project/Script/CRedButtonScript.cpp)**
+- [`CRedButtonScript::OnCollisionEnter`](https://github.com/tjwjdah/Directx11_Portfolio_GuardianTales/blob/main/Project/Script/CRedButtonScript.cpp#L37-L47)
+- [`CRedButtonScript::OnCollision`](https://github.com/tjwjdah/Directx11_Portfolio_GuardianTales/blob/main/Project/Script/CRedButtonScript.cpp#L49-L59)
+- [`CRedButtonScript::OnCollisionExit`](https://github.com/tjwjdah/Directx11_Portfolio_GuardianTales/blob/main/Project/Script/CRedButtonScript.cpp#L61-L67)
 
-Project/Script/CObjEventScriptMgr.h
-Project/Script/CObjEventScriptMgr.cpp
-
-CObjEventScriptMgr::SaveToScene
-CObjEventScriptMgr::LoadFromScene
-
-Project/Script/CRedButtonScript.h
-Project/Script/CRedButtonScript.cpp
-
-CRedButtonScript::OnCollisionEnter
-CRedButtonScript::OnCollision
-CRedButtonScript::OnCollisionExit
-
-Project/Script/CStoneDoorScript.h
-Project/Script/CStoneDoorScript.cpp
-
-CStoneDoorScript::update
-```
+**[`CStoneDoorScript.h`](https://github.com/tjwjdah/Directx11_Portfolio_GuardianTales/blob/main/Project/Script/CStoneDoorScript.h) · [`CStoneDoorScript.cpp`](https://github.com/tjwjdah/Directx11_Portfolio_GuardianTales/blob/main/Project/Script/CStoneDoorScript.cpp)**
+- [`CStoneDoorScript::update`](https://github.com/tjwjdah/Directx11_Portfolio_GuardianTales/blob/main/Project/Script/CStoneDoorScript.cpp#L37-L74)
 
 </details>
 
@@ -152,27 +126,20 @@ CStoneDoorScript::update
 <details>
 <summary>관련 코드 위치</summary>
 
-```text
-Project/Script/CTargetSearchScript.h
-Project/Script/CTargetSearchScript.cpp
+**[`CTargetSearchScript.h`](https://github.com/tjwjdah/Directx11_Portfolio_GuardianTales/blob/main/Project/Script/CTargetSearchScript.h) · [`CTargetSearchScript.cpp`](https://github.com/tjwjdah/Directx11_Portfolio_GuardianTales/blob/main/Project/Script/CTargetSearchScript.cpp)**
+- [`CTargetSearchScript::update`](https://github.com/tjwjdah/Directx11_Portfolio_GuardianTales/blob/main/Project/Script/CTargetSearchScript.cpp#L25-L55)
+- [`CTargetSearchScript::OnCollisionEnter`](https://github.com/tjwjdah/Directx11_Portfolio_GuardianTales/blob/main/Project/Script/CTargetSearchScript.cpp#L56-L62)
+- [`CTargetSearchScript::OnCollisionExit`](https://github.com/tjwjdah/Directx11_Portfolio_GuardianTales/blob/main/Project/Script/CTargetSearchScript.cpp#L64-L83)
 
-CTargetSearchScript::update
-CTargetSearchScript::OnCollisionEnter
-CTargetSearchScript::OnCollisionExit
+**[`AutoPlayer.cpp`](https://github.com/tjwjdah/Directx11_Portfolio_GuardianTales/blob/main/Project/Script/AutoPlayer.cpp)**
+- [`CPlayerScript::AutoPlayer`](https://github.com/tjwjdah/Directx11_Portfolio_GuardianTales/blob/main/Project/Script/AutoPlayer.cpp#L23-L336)
 
-Project/Script/AutoPlayer.cpp
-
-CPlayerScript::AutoPlayer
-
-Project/Script/CPlayerScript.h
-Project/Script/CPlayerScript.cpp
-
-CPlayerScript::update
-CPlayerScript::PlayerAction
-CPlayerScript::Attacking
-CPlayerScript::AttackStartComboState
-CPlayerScript::AttackEndComboState
-```
+**[`CPlayerScript.h`](https://github.com/tjwjdah/Directx11_Portfolio_GuardianTales/blob/main/Project/Script/CPlayerScript.h) · [`CPlayerScript.cpp`](https://github.com/tjwjdah/Directx11_Portfolio_GuardianTales/blob/main/Project/Script/CPlayerScript.cpp)**
+- [`CPlayerScript::update`](https://github.com/tjwjdah/Directx11_Portfolio_GuardianTales/blob/main/Project/Script/CPlayerScript.cpp#L126-L197)
+- [`CPlayerScript::PlayerAction`](https://github.com/tjwjdah/Directx11_Portfolio_GuardianTales/blob/main/Project/Script/CPlayerScript.cpp#L1123-L1312)
+- [`CPlayerScript::Attacking`](https://github.com/tjwjdah/Directx11_Portfolio_GuardianTales/blob/main/Project/Script/CPlayerScript.cpp#L1315-L1331)
+- [`CPlayerScript::AttackStartComboState`](https://github.com/tjwjdah/Directx11_Portfolio_GuardianTales/blob/main/Project/Script/CPlayerScript.cpp#L1333-L1351)
+- [`CPlayerScript::AttackEndComboState`](https://github.com/tjwjdah/Directx11_Portfolio_GuardianTales/blob/main/Project/Script/CPlayerScript.cpp#L1353-L1361)
 
 </details>
 
@@ -189,20 +156,14 @@ CPlayerScript::AttackEndComboState
 <details>
 <summary>관련 코드 위치</summary>
 
-```text
-Project/Engine/CCollisionMgr.h
-Project/Engine/CCollisionMgr.cpp
+**[`CCollisionMgr.h`](https://github.com/tjwjdah/Directx11_Portfolio_GuardianTales/blob/main/Project/Engine/CCollisionMgr.h) · [`CCollisionMgr.cpp`](https://github.com/tjwjdah/Directx11_Portfolio_GuardianTales/blob/main/Project/Engine/CCollisionMgr.cpp)**
+- [`CCollisionMgr::CollisionRvsR`](https://github.com/tjwjdah/Directx11_Portfolio_GuardianTales/blob/main/Project/Engine/CCollisionMgr.cpp#L126-L173)
+- [`CCollisionMgr::CollisionGroup`](https://github.com/tjwjdah/Directx11_Portfolio_GuardianTales/blob/main/Project/Engine/CCollisionMgr.cpp#L36-L107)
 
-CCollisionMgr::CollisionRvsR
-CCollisionMgr::CollisionGroup
-
-Project/Engine/CCollider2D.h
-Project/Engine/CCollider2D.cpp
-
-CCollider2D::finalupdate
-CCollider2D::OnCollisionEnter
-CCollider2D::OnCollision
-CCollider2D::OnCollisionExit
-```
+**[`CCollider2D.h`](https://github.com/tjwjdah/Directx11_Portfolio_GuardianTales/blob/main/Project/Engine/CCollider2D.h) · [`CCollider2D.cpp`](https://github.com/tjwjdah/Directx11_Portfolio_GuardianTales/blob/main/Project/Engine/CCollider2D.cpp)**
+- [`CCollider2D::finalupdate`](https://github.com/tjwjdah/Directx11_Portfolio_GuardianTales/blob/main/Project/Engine/CCollider2D.cpp#L48-L85)
+- [`CCollider2D::OnCollisionEnter`](https://github.com/tjwjdah/Directx11_Portfolio_GuardianTales/blob/main/Project/Engine/CCollider2D.cpp#L114-L132)
+- [`CCollider2D::OnCollision`](https://github.com/tjwjdah/Directx11_Portfolio_GuardianTales/blob/main/Project/Engine/CCollider2D.cpp#L134-L142)
+- [`CCollider2D::OnCollisionExit`](https://github.com/tjwjdah/Directx11_Portfolio_GuardianTales/blob/main/Project/Engine/CCollider2D.cpp#L144-L158)
 
 </details>
